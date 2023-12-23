@@ -1,0 +1,49 @@
+$sans: system-ui, -apple-system, sans-serif;
+$outfit: "Outfit", $sans;
+
+// == Bulma overrides ==
+// https://bulma.io/documentation/customize/variables/
+// I've mostly listed the defaults that will need to change if you want to completely
+// override the colors of Bulma, but keep everything else
+// For body background-color, set $scheme-main
+// For text color, set $text
+// For accent color, set $primary
+// Also, if you want to create a lot of different variations of something, you can
+// use the $colors array in Bulma as a palette with a scss for loop
+
+$family-primary: $sans;
+$family-secondary: $outfit; // We use as title font
+
+$scheme-main: #FFF; // Sets body background
+$scheme-main-bis: lighten($scheme-main, 2.5%);
+$scheme-main-ter: lighten($scheme-main, 5%);
+
+$scheme-invert: invert($scheme-main);
+$scheme-invert-bis: invert($scheme-main-bis);
+$scheme-invert-ter: invert($scheme-main-ter);
+
+$primary: #F0F; // Accent color
+
+$background: $scheme-main-ter; //Background of code blocks and other general stuff
+
+$text: #eee;
+$text-light: hsl(0, 0%, 25%); // Also styles $input-disabled-color
+$text-strong: $text; // Also styles $input-color by default
+$link: #22A2BB;
+$link-visited: #6B8084;
+$code: darken(red, 15%);
+
+$button-disabled-background-color: #333;
+// border-color: $button-disabled-border-color
+// box-shadow: $button-disabled-shadow
+// opacity: $button-disabled-opacity
+
+//$body-size: 16px; // Adjust base body size
+$body-line-height: 1.1666;
+
+//Forms overrides
+// $input-color: $text-strong;
+// $input-background-color: $scheme-main;
+$input-placeholder-color: #FFF;
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";

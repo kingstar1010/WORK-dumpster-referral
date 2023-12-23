@@ -1,0 +1,120 @@
+@import "../pages/_utils.scss";
+.contractorDetail {
+  position: relative;
+  margin: 20px 30px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #FFF;
+
+  :global {
+    .ctr_main {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 30px;
+      .ctr_image {
+        padding: 10px 20px;
+        width: 45%;
+      }
+
+      .ctr_content {
+        width: 55%;
+        .ctr_content_header {
+          font-size: 15px;
+          display: flex;
+          margin-left: 30px;
+          margin-right: 30px;
+          padding: 10px 20px;
+          background-image: linear-gradient(to right, rgba(49,62,85,100), rgba(43,53,72,100));
+          .ctr_content_header_icon {
+            margin-left: 20px;
+          }
+          .ctr_content_header_text{
+            padding: 0;
+            margin: 0;
+            padding-left: 10px;
+          }
+        }
+
+        .ctr_content_title {
+          background-image: linear-gradient(to right, rgba(119,127,142,100), rgba(77,83,92,100));
+          padding: 15px 20px;
+          font-size: 30px;
+          font-weight: bold;
+        }
+
+        .ctr_content_text {
+          margin-left: 30px;
+          margin-right: 30px;
+          padding: 30px;
+          background-image: linear-gradient(to right, rgba(46,58,80,100), rgba(43,53,72,100));
+        }
+        .ctr_content_schedule {
+          margin-top: 30px;
+          margin-left: 30px;
+          margin-right: 30px;
+          padding: 20px 20px;
+          border-style: solid;
+          border-width: 2px;
+          border-color: white;
+          background-color: rgba(73,104,72,100);
+          .ctr_content_schedule_title {
+            margin: 0;
+            padding: 0;
+          }
+          .ctr_content_schedule_content{
+            padding: 20px;
+            display: flex;
+            .ctr_content_schedule_text{
+              width: 100%;
+              .ctr_content_schedule_phone{
+                font-size: 20px;
+                font-family: Bahnschrift;
+                font-weight: bold;
+                padding: 0;
+                margin: 0;
+              }
+              .ctr_content_schedule_time {
+                font-size: 30px;
+                font-family: Ebrima;
+                padding: 0;
+                margin: 0;
+              }
+            }
+            .ctr_content_schedule_icon {
+              width: 6%;
+              align-items: end;
+              align-content: end;
+            }
+          }
+        }
+      }
+    }
+    .ctr_bottom {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      display: flex;
+      .ctr_bottom_title{
+        margin-left: 50px;
+        padding: 17px 20px;
+        font-size: 15px;
+      }
+      .ctr_bottom_view_site{
+        margin-left: 50px;
+        font-size: 30px;
+        height: 65px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        color: white;
+      }
+    }
+  }
+}
+

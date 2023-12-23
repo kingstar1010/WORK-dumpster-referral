@@ -1,0 +1,66 @@
+.contractor {
+    margin: auto;
+    margin-top: 300px;
+    margin-bottom: 150px;
+    width: 80%;
+    background-color: #303d53;
+
+  table {
+    background: #303d53;
+    width: 100%;
+    thead {
+        background: #595f6a !important;
+        tr {
+            th {
+                width: 50%;
+            }
+        }
+    }
+    tbody {
+        border-top: 20px solid #303d53; /* Space between rows set to 10px */
+        background: #303d53;
+        color: white;
+        font-size: 30px; /* Font size of each cell is set to 20px */
+        a {
+            color: white; /* Font color of anchor tag is set to white */
+            text-decoration: underline; /* Underline for anchor tag text */
+        }
+        tr {
+            height: 50px; /* Set the height of each row to 50px */
+            border-left: 20px solid #303d53; /* Space between rows set to 10px */
+            border-right: 20px solid #303d53; /* Space between rows set to 10px */
+            border-bottom: 20px solid #303d53; /* Space between rows set to 10px */
+        }
+        td{
+            padding: 30px;
+        }
+        
+        tr {
+            background-color: #384253;
+                // > *:first-child {
+                //     margin-left: 10px;
+                //     font-size: 40px;
+                //     padding: 10px;
+                //     span {
+                //         background: red;
+                //         width: 100%;
+                //     }
+                // }
+                // > *:last-child {
+                //     background: yellow;
+                // }
+        }
+    }
+  }
+
+  div {
+    display: flex;
+
+    button {
+        width: 200px;
+        background-color: unset;
+    margin-bottom: 20px;
+    margin-left: 10px;        
+    }
+  }
+}

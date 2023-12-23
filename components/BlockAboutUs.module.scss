@@ -1,0 +1,13 @@
+@import "../pages/_utils.scss";
+
+.blockAboutUs {
+  :global {
+    ul {
+      margin-bottom: 10px;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

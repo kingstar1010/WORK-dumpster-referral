@@ -1,0 +1,86 @@
+@import "../pages/_utils.scss";
+
+.jobsMap {
+  position: relative;
+  width: 400px;
+  height: 1000px;
+
+  :global {
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 1600px;
+      width: auto;
+      transform: translateX(-700px) translateY(-550px);
+    }
+
+    .grosse-ile-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(215px) translateY(875px);
+      transition: all 0.2s;
+      color: #FFF;
+      background-color: transparent;
+      font-size: 24px;
+
+      &:after {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        display: block;
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 9999px;
+        background-color: #f00;
+        outline: 2px solid #000;
+        transition: all 0.2s;
+      }
+
+      &:hover, &:focus {
+        color: #000;
+        background-color: #FFF;
+
+        &:after {
+          background-color: #FFF;
+        }
+      }
+    }
+
+    .detroit-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(235px) translateY(800px);
+      transition: all 0.2s;
+      color: #FFF;
+      background-color: transparent;
+      font-size: 24px;
+
+      &:after {
+        position: absolute;
+        top: -7px;
+        left: -10px;
+        display: block;
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 9999px;
+        background-color: #f00;
+        outline: 2px solid #000;
+        transition: all 0.2s;
+      }
+
+      &:hover, &:focus {
+        color: #000;
+        background-color: #FFF;
+
+        &:after {
+          background-color: #FFF;
+        }
+      }
+    }
+  }
+}

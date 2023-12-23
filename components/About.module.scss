@@ -1,0 +1,15 @@
+@import "../pages/_utils.scss";
+
+.about {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 200px;
+
+    :global {
+        .about-us {
+            font-size: 3rem;
+            display: block;
+            padding-bottom: 1rem;
+        }
+    }
+}

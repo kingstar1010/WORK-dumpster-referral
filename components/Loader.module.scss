@@ -1,0 +1,26 @@
+.loader {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid rgba(230, 94, 33,0.3);
+  border-left-color: #e65e21;
+  background: transparent;
+  animation: loading 2.4s cubic-bezier(.21,.51,.48,.51) infinite;
+
+  &.white {
+    border: 3px solid rgba(white,0.3);
+    border-left-color: white;
+  }
+}
+@keyframes loading {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotatez(360deg);
+  }
+}
